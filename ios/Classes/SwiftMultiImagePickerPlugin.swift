@@ -66,7 +66,8 @@ public class SwiftMultiImagePickerPlugin: NSObject, FlutterPlugin {
             if #available(iOS 14.0, *) {
                 // Disables iOS 13 swipe to dismiss - to force user to press cancel or done.
                 vc.isModalInPresentation = true
-                 vc.takePhotos = false
+                
+              //   vc.takePhotos = false
 
             }
             let arguments = call.arguments as! Dictionary<String, AnyObject>
